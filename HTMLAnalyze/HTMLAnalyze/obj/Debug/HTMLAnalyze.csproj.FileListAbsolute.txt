@@ -6,3 +6,12 @@
 \\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.csprojResolveAssemblyReference.cache
 \\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.dll
 \\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.pdb
+C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HTMLAnalyze.dll.config
+C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HTMLAnalyze.dll
+C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HTMLAnalyze.pdb
+C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgilityPack.dll
+C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgilityPack.pdb
+C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgilityPack.xml
+C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.csprojResolveAssemblyReference.cache
+C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.dll
+C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.pdb
