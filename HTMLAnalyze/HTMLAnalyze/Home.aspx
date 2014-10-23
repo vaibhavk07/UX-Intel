@@ -16,7 +16,11 @@
         <br />
         <textarea rows="4" cols="50" id="txtResponse" runat="server">
         </textarea>
-    </div>
+        
+        <div id="addwebpage" runat="server"></div>
+        <div id="addstyle" runat="server"></div>
+        <div id="addscript" runat="server"></div>
+        </div>
     </form>
 </body>
 </html>

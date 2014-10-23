@@ -1,5 +1,8 @@
 \\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\bin\HTMLAnalyze.dll
 \\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\bin\HTMLAnalyze.pdb
+\\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgilityPack.dll
+\\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgilityPack.pdb
+\\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgilityPack.xml
 \\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.csprojResolveAssemblyReference.cache
 \\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.dll
 \\HP\Projects\HTML Parser\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.pdb
