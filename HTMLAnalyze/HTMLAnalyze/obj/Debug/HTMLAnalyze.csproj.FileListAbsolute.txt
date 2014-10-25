@@ -15,3 +15,11 @@ C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgil
 C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.csprojResolveAssemblyReference.cache
 C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.dll
 C:\Users\sam14581\Documents\GitHub\UX-Intel\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.pdb
+C:\Users\Vaibhav\Documents\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HTMLAnalyze.dll
+C:\Users\Vaibhav\Documents\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HTMLAnalyze.pdb
+C:\Users\Vaibhav\Documents\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgilityPack.dll
+C:\Users\Vaibhav\Documents\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgilityPack.pdb
+C:\Users\Vaibhav\Documents\UX-Intel\HTMLAnalyze\HTMLAnalyze\bin\HtmlAgilityPack.xml
+C:\Users\Vaibhav\Documents\UX-Intel\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.csprojResolveAssemblyReference.cache
+C:\Users\Vaibhav\Documents\UX-Intel\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.dll
+C:\Users\Vaibhav\Documents\UX-Intel\HTMLAnalyze\HTMLAnalyze\obj\Debug\HTMLAnalyze.pdb

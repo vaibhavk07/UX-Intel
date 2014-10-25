@@ -20,20 +20,23 @@ namespace HTMLAnalyze
 
         protected void btnparser_Click(object sender, EventArgs e)
         {
-            //HtmlAgilityPack
+            addwebpage.InnerHtml = String.Empty;
+            addlink.InnerHtml = String.Empty;
+            addscript.InnerHtml = String.Empty;
+            addstyle.InnerHtml = String.Empty;
+            string url = "https://" + txturl.Text;
             HtmlWeb webpage = new HtmlWeb();
-            //HtmlDocument doc = webpage.Load("https://app.vwo.com/#/login/");
-            HtmlDocument doc = webpage.Load("https://www.facebook.com/");
+            HtmlDocument doc = webpage.Load(url);
 
-            string htmlText = doc.DocumentNode.InnerHtml;//doc.ToString();
-            //txtResponse.Value = htmlText;
+            string htmlText = doc.DocumentNode.InnerHtml;
 
             var scripts = doc.DocumentNode.Descendants("script");
             var styles = doc.DocumentNode.Descendants("style");
+            var links = doc.DocumentNode.Descendants("link");
             StringBuilder sb = new StringBuilder();
             foreach (var script in scripts)
             {
-                sb.Append(script.OuterHtml);
+                sb.Append(script.OuterHtml.Replace("src=\"/", "src=\"" + url + "/"));
             }
             addscript.InnerHtml = sb.ToString();
             sb.Clear();
@@ -43,43 +46,28 @@ namespace HTMLAnalyze
                 sb.Append(style.OuterHtml);
             }
             addstyle.InnerHtml = sb.ToString();
+            sb.Clear();
 
-            //foreach (var scriptnode in script)
-            //{
-            //    doc.DocumentNode.RemoveChild(scriptnode);
-            //}
+            foreach (var link in links)
+            {
+                if (!link.OuterHtml.Contains("href=\"//"))
+                {
+                    sb.Append(link.OuterHtml.Replace("href=\"/", "href=\"" + url + "/"));
+                }
+                else
+                {
+                    sb.Append(link.OuterHtml);
+                }
+            }
+            addlink.InnerHtml = sb.ToString();
             var tbody = doc.DocumentNode.Descendants("body");
 
             StringBuilder body_html = new StringBuilder();
             foreach (var item in tbody)
             {
-                //var filter_webpage = item.Descendants();
-                //foreach (var t_elements in filter_webpage)
-                //{
-                //    if (t_elements.Name.ToString().ToLower() != "script"&&t_elements.NodeType!= HtmlNodeType.Text)
-                //        body_html.Append(t_elements.OuterHtml);
-                //}
                 addwebpage.InnerHtml = item.InnerHtml;
-//                txtResponse.Value = item.InnerHtml;
             }
-            
-            //var body = doc.DocumentNode.Descendants();
-            //    string bbody = "";
-            //    foreach (var item in body)
-            //    {
-            //        if (item.Name.ToString().ToLower() == "script")
-            //            continue;
-            //        bbody += item.OuterHtml;
-            //    }
-            //    var divbody = bbody.ToString();
-            //    txtResponse.Value = divbody;
-            //HttpWebRequest htm = (HttpWebRequest)WebRequest.Create("http://www.yahoo.com");
-            //htm.UserAgent = Request.UserAgent;
-            //HttpWebResponse rep = (HttpWebResponse)htm.GetResponse();
-            //Stream stream = rep.GetResponseStream();
-            //StreamReader reader = new StreamReader(stream);
-            //string htmlText = reader.ReadToEnd();
-            //txtResponse.Value = htmlText;
+            BTNanalyze.Visible = true;
         }
     }
 }

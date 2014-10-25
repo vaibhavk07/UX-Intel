@@ -13,13 +13,22 @@ namespace HTMLAnalyze {
     public partial class Home {
         
         /// <summary>
-        /// form1 control.
+        /// Head1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
+        
+        /// <summary>
+        /// adddynamicwebform93y73nu38soso82hen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm adddynamicwebform93y73nu38soso82hen;
         
         /// <summary>
         /// lblurl control.
@@ -49,13 +58,13 @@ namespace HTMLAnalyze {
         protected global::System.Web.UI.WebControls.Button btnparser;
         
         /// <summary>
-        /// txtResponse control.
+        /// BTNanalyze control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtResponse;
+        protected global::System.Web.UI.HtmlControls.HtmlInputButton BTNanalyze;
         
         /// <summary>
         /// addwebpage control.
@@ -74,6 +83,15 @@ namespace HTMLAnalyze {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl addstyle;
+        
+        /// <summary>
+        /// addlink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl addlink;
         
         /// <summary>
         /// addscript control.
