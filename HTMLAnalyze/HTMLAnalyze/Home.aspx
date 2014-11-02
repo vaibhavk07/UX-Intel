@@ -7,96 +7,82 @@
     <title></title>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" ></script>
     <script type="text/javascript" >
-        var functionAfterLoad = function () {
 
-            // finding username 
-            var goodthings = ""
-            var badthings = ""
-            var maxlength = ''
-            var txtUserName = $('#addwebpage').find("[type=text]");
-
-            if (txtUserName.length == 1) {
-                var maxlength = txtUserName.attr('maxlength');
-                goodthings = "<b>USERNAME</b>"
-                badthings = "<b>USERNAME</b>"
-                if (maxlength != '') {
-
-                    goodthings = goodthings + "</br>" + "User Name Has Maxlength =" + maxlength;
-                }
-                else {
-                    badthings = badthings + "</br>" + "User Name MUST HAVE Maxlength";
-                }
-
-                var tabindex = txtUserName.attr('tabindex');
-
-                if (tabindex != '') {
-
-                    goodthings = goodthings + "</br>" + "User Name Has tabindex =" + tabindex;
-                }
-                else {
-                    badthings = badthings + "</br>" + "User Name MUST HAVE tabindex";
-                }
-
-                var placeholder = txtUserName.attr('placeholder');
-
-                if (placeholder != '') {
-
-                    goodthings = goodthings + "</br>" + "User Name Has placeholder =" + placeholder;
-                }
-                else {
-                    badthings = badthings + "</br>" + "User Name MUST HAVE placeholder";
-                }
-            }
-            else {
-
-                // we need to write some custom logic while parsing global sites 
-            }
-            // finding password 
-            var txtPassword = $('#addwebpage').find("[type=password]");
-
-            if (txtPassword.length == 1) {
-                var maxlength = txtPassword.attr('maxlength');
-                goodthings = goodthings + "<br/><b>Password</b>"
-                badthings = badthings + "</br><b>Password</b>"
-                if (maxlength != '') {
-
-                    goodthings = goodthings + "</br>" + "Password Has Maxlength =" + maxlength;
-                }
-                else {
-                    badthings = badthings + "</br>" + "Password MUST HAVE Maxlength";
-                }
-                var tabindex = txtPassword.attr('tabindex');
-                if (tabindex != '') {
-
-                    goodthings = goodthings + "</br>" + "Password Has tabindex =" + tabindex;
-                }
-                else {
-                    badthings = badthings + "</br>" + "Password MUST HAVE tabindex";
-                }
-                var placeholder = txtPassword.attr('placeholder');
-                if (placeholder != '') {
-
-                    goodthings = goodthings + "</br>" + "Password Has placeholder =" + placeholder;
-                }
-                else {
-                    badthings = badthings + "</br>" + "Password MUST HAVE placeholder";
-                }
-            }
-            else {
-                // we need to write some custom logic while parsing global sites 
-            }
-            // finding remember be checkbox 
-            var chkremeberme = $('#addwebpage').find("[type=chekbox]");
-
-            if (chkremeberme.length == 1) {
-            }
-            else {
-            }
-            // finding Sign In Button
-            var btnSignIN = $("#addwebpage").find("[type=submit]");
-            $("#goodThings").html(goodthings);
-            $("#badThings").html(badthings);
-        }
+        //var functionAfterLoad = function () {
+        //    // finding username 
+        //    var goodthings = ""
+        //    var badthings = ""
+        //    var maxlength = ''
+        //    var txtUserName = $('#addwebpage').find("[type=text]");
+        //    if (txtUserName.length == 1) {
+        //        var maxlength = txtUserName.attr('maxlength');
+        //        goodthings = "<b>USERNAME</b>"
+        //        badthings = "<b>USERNAME</b>"
+        //        if (maxlength != '') {
+        //            goodthings = goodthings + "</br>" + "User Name Has Maxlength =" + maxlength;
+        //        }
+        //        else {
+        //            badthings = badthings + "</br>" + "User Name MUST HAVE Maxlength";
+        //        }
+        //        var tabindex = txtUserName.attr('tabindex');
+        //        if (tabindex != '') {
+        //            goodthings = goodthings + "</br>" + "User Name Has tabindex =" + tabindex;
+        //        }
+        //        else {
+        //            badthings = badthings + "</br>" + "User Name MUST HAVE tabindex";
+        //        }
+        //        var placeholder = txtUserName.attr('placeholder');
+        //        if (placeholder != '') {
+        //            goodthings = goodthings + "</br>" + "User Name Has placeholder =" + placeholder;
+        //        }
+        //        else {
+        //            badthings = badthings + "</br>" + "User Name MUST HAVE placeholder";
+        //        }
+        //    }
+        //    else {
+        //        // we need to write some custom logic while parsing global sites 
+        //    }
+        //    // finding password 
+        //    var txtPassword = $('#addwebpage').find("[type=password]");
+        //    if (txtPassword.length == 1) {
+        //        var maxlength = txtPassword.attr('maxlength');
+        //        goodthings = goodthings + "<br/><b>Password</b>"
+        //        badthings = badthings + "</br><b>Password</b>"
+        //        if (maxlength != '') {
+        //            goodthings = goodthings + "</br>" + "Password Has Maxlength =" + maxlength;
+        //        }
+        //        else {
+        //            badthings = badthings + "</br>" + "Password MUST HAVE Maxlength";
+        //        }
+        //        var tabindex = txtPassword.attr('tabindex');
+        //        if (tabindex != '') {
+        //            goodthings = goodthings + "</br>" + "Password Has tabindex =" + tabindex;
+        //        }
+        //        else {
+        //            badthings = badthings + "</br>" + "Password MUST HAVE tabindex";
+        //        }
+        //        var placeholder = txtPassword.attr('placeholder');
+        //        if (placeholder != '') {
+        //            goodthings = goodthings + "</br>" + "Password Has placeholder =" + placeholder;
+        //        }
+        //        else {
+        //            badthings = badthings + "</br>" + "Password MUST HAVE placeholder";
+        //        }
+        //    }
+        //    else {
+        //        // we need to write some custom logic while parsing global sites 
+        //    }
+        //    // finding remember be checkbox 
+        //    var chkremeberme = $('#addwebpage').find("[type=chekbox]");
+        //    if (chkremeberme.length == 1) {
+        //    }
+        //    else {
+        //    }
+        //    // finding Sign In Button
+        //    var btnSignIN = $("#addwebpage").find("[type=submit]");
+        //    $("#goodThings").html(goodthings);
+        //    $("#badThings").html(badthings);
+        //}
     </script>
 </head>
 <body>
