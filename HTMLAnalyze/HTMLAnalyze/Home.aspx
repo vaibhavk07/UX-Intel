@@ -7,7 +7,28 @@
     <title></title>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" ></script>
     <script type="text/javascript" >
+        function functionAfterLoad() {
+            //alert("vaibhav");
+            var attr_name = "<b>Name</b></br>";
+            var attr_value = "<b>Value</b></br>";
 
+            $("#inputs").children("input").each(function () {
+                //console.log(this.); // "this" is the current element in the loop
+                $(this).each(function () {
+                    $.each(this.attributes, function () {
+                        // this.attributes is not a plain object, but an array
+                        // of attribute nodes, which contain both the name and value
+                        if (this.specified) {
+                            attr_name += this.name + "--</br>";
+                            attr_value += "--" + this.value + "</br>";
+                            //console.log(this.name, this.value);
+                        }
+                    });
+                });
+            });
+            $("#attr_name").html(attr_name);
+            $("#attr_value").html(attr_value);
+        }
         //var functionAfterLoad = function () {
         //    // finding username 
         //    var goodthings = ""
@@ -94,13 +115,13 @@
         
         <input type="button" value="lets Analyze" id="BTNanalyze" runat="server" visible="false"  onclick="functionAfterLoad()" />
         
-        <table width="100%"><tr>
+       <table width="25%"><tr>
             <td width="50%">
-                <div id="goodThings">                 
+                <div id="attr_name">                 
                 </div>
             </td>
             <td width="50%">
-                <div id="badThings">
+                <div id="attr_value">
                 </div>
             </td>
                </tr></table>
