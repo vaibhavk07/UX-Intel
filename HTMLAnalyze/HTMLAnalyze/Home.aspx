@@ -13,12 +13,9 @@
             var attr_value = "<b>Value</b></br>";
 
             $("#inputs").children("input").each(function () {
-                //console.log(this.); // "this" is the current element in the loop
                 $(this).each(function () {
                     $.each(this.attributes, function () {
-                        // this.attributes is not a plain object, but an array
-                        // of attribute nodes, which contain both the name and value
-                        if (this.specified) {
+                         if (this.specified) {
                             attr_name += this.name + "--</br>";
                             attr_value += "--" + this.value + "</br>";
                             //console.log(this.name, this.value);
